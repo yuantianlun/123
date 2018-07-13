@@ -1,0 +1,518 @@
+@media (max-width: 1680px){
+    .slide-grid-container {
+        height: 660px;
+    }
+    .index-about{
+        height:450px;
+    }
+    .index-about-video{
+        height: 450px;
+    }
+    .swiper-slide h1{
+        padding-top: 55px;
+        font-size: 28px;
+        margin:0;
+    }
+    .ph-post1-wrapper .button:after, .ph-post1-wrapper .button > span > span{
+        font-size: 22px;
+    }
+    .cell,.is-6{
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .slide-grid-container .slide-grid-item a {
+        background-size: auto 660px;
+    }
+
+    .ph-post1-wrapper .button:after, .ph-post1-wrapper .button > span > span {
+
+        padding: 0.5em 0;
+    }
+
+    .ph-post1-wrapper .button {
+        width: 6.5em;
+    }
+    .service-text .text p{
+        width: 75%;
+    }
+    .ph-post1-wrapper .button > span > span{
+        width: 7em;
+    }
+    .index3-lbottom-dtbox div div{
+        font-size: 16px;
+    }
+    .index3-lbottom-dtbox div p{
+        font-size: 14px;
+    }
+    .index-about-video1{
+        height:750px;
+    }
+    .index-about1{
+        height:750px;
+    }
+    .index-about-video1 .video-js{
+        height: 64%;
+    }
+    .index_h1 h1{
+        padding-top:110px;
+        padding-bottom:60px;
+    }
+    .slide-grid-container .slide-grid-item a{
+        background-size:auto 620px;
+    }
+    .slide-grid-container{
+        height:620px;
+    }
+
+}
+@media (max-width: 1360px) {
+    .slide-grid-container {
+        height: 660px;
+    }
+    .cell,.is-6{
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .slide-grid-container .slide-grid-item a {
+        background-size: auto 660px;
+    }
+
+    .ph-post1-wrapper .button:after, .ph-post1-wrapper .button > span > span {
+
+        padding: 0.5em 0;
+    }
+
+    .ph-post1-wrapper .button {
+        width: 5.5em;
+    }
+    .service-text .text p{
+        width: 75%;
+    }
+    .ph-post1-wrapper .button > span > span{
+        width: 5.5em;
+    }
+
+
+}
+    @media (max-width: 1200px) {
+        .footer-left {
+            display: none;
+        }
+
+        .index3-right {
+            display: none;
+        }
+
+        .one {
+            overflow-x: scroll;
+        }
+
+        .one ul {
+            width: 2000px;
+        }
+
+        .footer-left {
+            display: none;
+        }
+
+        .index3-right {
+            display: none;
+        }
+
+        .service-list-con {
+            padding: 30px 0;
+        }
+        .page-cen {
+            padding: 0 30px;
+        }
+        .service-list {
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .service-text .text {
+            margin: 10px 0;
+        }
+        .service-text .text p {
+            width: 100%;
+        }
+        .footer-rightL{
+            margin-left: 20px;
+        }
+        .footer_banquan{
+            line-height: 30px;
+        }
+        .footer_jishizhichi{
+            float: none;
+            text-align: center;
+            line-height: 60px;
+        }
+        .index3-lbottom-dtbox{
+            padding: 5px;
+        }
+        .index3-lbottom-dtbox div div{
+            font-size: 16px;
+        }
+        .index3-lbottom-dtbox div p{
+            font-size: 12px;
+        }
+
+        .index-about-video1 .video{
+            height: 700px;
+        }
+        .swiper-slide h1 {
+            padding-top: 35px;
+            font-size: 34px;
+        }
+        .index-about-video{
+            height: 400px;
+        }
+        .index-about{
+            height: 400px;
+        }
+        .index-about1{
+            height: 500px;
+        }
+        .index-about-video1{
+            height: 500px;
+        }
+        .index_h1 h1{
+            padding-top: 55px;
+            padding-bottom: 25px;
+            font-size: 34px;
+        }
+        .index_h1 h4{
+            font-size: 24px;
+        }
+    }
+
+@media (max-width: 1500px){
+    .footer-rightL{
+        margin-left: 13px;
+    }
+    .footer-rightR-1{
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+    .footer-rightR-2{
+        font-size: 13px;
+        letter-spacing: 0;
+
+    }
+    .footer-rightR-3{
+        font-size: 13px;
+        letter-spacing: 1px;
+
+    }
+    .footer-rightR-4{
+        font-size: 13px;
+        letter-spacing: 0;
+
+    }
+    .footer-rightR-5{
+        font-size: 13px;
+    }
+    .wenhua ul li a{
+        padding-left: 50px;
+    }
+    .qiyewenhua1{
+        width: 50%;
+    }
+    .qiyewenhua2{
+        width: 50%;
+    }
+    .heibiaoti{
+        top: 20px;
+    }
+    .baiwenzi{
+        font-size: 50px;
+    }
+    .heibiaoti2{
+        top: 20px;
+    }
+    .baiwenzi2{
+        font-size: 50px;
+    }
+    .heibiaoti h4{
+        font-size: 15px;
+    }
+    .heibiaoti2 h4{
+        font-size: 15px;
+    }
+    .hangye-box{
+        padding-top: 10px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .index-about{
+        height: 200px;
+    }
+    .index-about-video{
+        height: 200px;
+    }
+    .shubiao{
+        width: 10px;
+        height: 10px;
+    }
+    .index3-left{
+        padding: 20px 0;
+    }
+    .index1_top {
+        padding: 10px;
+    }
+    .index1_top h3{
+        font-size: 18px;
+    }
+    .index1_yinying {
+        margin: 5px auto;
+    }
+    .index1_top h2{
+        font-size: 16px;
+    }
+    .index4{
+        height: 300px;
+    }
+    .index4_top {
+        padding-top: 10px;
+    }
+    .index4_top h3{
+        font-size: 18px;
+    }
+    .index4_yinying {
+        margin: 5px auto;
+    }
+    .index4_top h2{
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+    .index5_top {
+        padding: 10px;
+    }
+    .index5_top h3{
+        font-size: 18px;
+    }
+    .index5_yinying {
+        margin: 5px auto;
+    }
+    .index5_top h2{
+        font-size: 16px;
+    }
+    .index1_bottom ul li {
+        padding: 10px ;
+    }
+    .index3-lbottom-dtbox {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 80%;
+        height: 80%;
+        border-radius: 5px;
+        border: 1px solid #ffffff;
+        margin: auto;
+        padding: 5px 15px;
+    }
+    .index3-lbottom-dtbox div div{
+        font-size: 14px;
+        padding: 3px 0;
+    }
+    .index3-lbottom-dtbox div p{
+        font-size: 12px;
+    }
+    .news_wenzi h6 {
+        font-size: 16px;
+    }
+    .news_wenzi p {
+        font-size: 12px;
+    }
+    .footer-left{
+        display: none;
+    }
+    .index3-right{
+        display: none;
+    }
+    .qiyejianjie_btnBox{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .ph-post1-wrapper .button{
+        margin: 0 auto;
+        width: 6em;
+    }
+    .ph-post1-wrapper {
+        font-size: 14px;
+    }
+    .index3-lan h3{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .index3-lan h5{
+        font-size: 14px;
+    }
+    .index3-lanTiao{
+        height: 55px;
+    }
+    .index3-ltop p{
+        font-size: 12px;
+        padding: 0;
+         margin-top: 0;
+    }
+    .qiyejianjie_img1{
+        padding: 0;
+    }
+    .two ul li{
+        width: 240px;
+        height: 150px;
+    }
+    .two ul li a{
+        width: 240px;
+        height: 150px;
+    }
+    .Cooldog_container {
+        width: 100%;
+
+    }
+    .service-list-con {
+        padding: 30px 0;
+    }
+    .page-cen {
+        padding: 0 30px;
+    }
+    .service-list {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .service-text .text {
+        margin: 10px 0;
+    }
+    .service-text .text p {
+        width: 100%;
+    }
+    .xinwenlb_wenzi h4 {
+        font-size: 16px;
+    }
+    .xinwenlb_wenzi{
+        font-size: 12px;
+    }
+    .xinwenlb_box{
+        /*height: 160px;*/
+    }
+    .footer-rightL{
+        margin-left: 20px;
+    }
+    .footer-rightR-1{
+        font-size: 14px;
+    }
+    .footer-rightR-2{
+        font-size: 12px;
+    }
+    .footer-rightR-3{
+        font-size: 12px;
+    }
+    .footer-rightR-4{
+        font-size: 12px;
+    }
+    .footer-rightR-5{
+        font-size: 12px;
+    }
+    .footer_banquan{
+        line-height: 30px;
+    }
+    .footer_jishizhichi{
+        float: none;
+        text-align: center;
+        line-height: 60px;
+    }
+    .qiyewenhua1{
+        width: 90%;
+    }
+    .baiwenzi{
+        font-size: 40px;
+    }
+    .heibiaoti{
+        top: 12px;
+    }
+    .heibiaoti h4{
+        font-size: 14px;
+    }
+    .qiyewenhua2{
+        width: 90%;
+    }
+    .baiwenzi2{
+        font-size: 40px;
+    }
+    .heibiaoti2{
+        top: 12px;
+    }
+    .heibiaoti2 h4{
+        font-size: 14px;
+    }
+    .wenhua ul li a{
+        padding-left: 18px;
+    }
+    .wenhua ul li a div div{
+        font-size: 14px;
+        margin: auto 35px;
+    }
+    .hangye-box{
+        padding-top: 10px;
+    }
+    .jiejue_wenzi{
+        font-size: 12px;
+    }
+    .bnr-thumbnail-list .bnr-tnl-copy-box h3{
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 11px;
+        margin-left: calc(46% - -14px);
+    }
+    .bnr-thumbnail-list .bnr-tnl-copy-box p{
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-left: calc(46% - -14px);
+    }
+    .bnr-thumbnail-list .bnr-tnl-copy-box a.btn {
+        display: block;
+        width: 100%;
+    }
+    .bnr-thumbnail-list .bnr-tnl-copy-box{
+        width: 100%;
+    }
+    .shaixuan_box{
+        padding-bottom: 50px;
+    }
+    .fanhuishouye{
+        right: 0;
+    }
+    .fanhuidingbu{
+        right: 0;
+    }
+    .index_h1 h1{
+        padding-top: 5px;
+        padding-bottom: 15px;
+        font-size: 20px;
+    }
+    .index_h1 h4{
+        font-size: 14px;
+    }
+    .index4{
+        height: 250px;
+    }
+    .two ul{
+        height: 200px;
+    }
+    .index-about-video1 .video {
+        height: 280px;
+    }
+    .swiper-slide h1{
+        padding-top: 15px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,770 @@
+/* reset */
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select { margin:0; padding:0; }
+h2{font-size: 30px;}
+h3{font-size: 22px;}
+em { font-style:normal; }
+li { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:none; }
+.fl{ float:left;}
+.fr{ float:right;}
+.clearfix:after{ content:""; height:0; line-height:0; display:block; visibility:hidden; clear:both}
+/*.clearfix{ zoom:1;}*/
+img { border:none; vertical-align:top; width: 100%;}
+table { border-collapse:collapse; }
+input,textarea { outline:none; }
+textarea { resize:none; overflow:auto; }
+html{ line-height: initial;}
+body { font-size:14px;font-family: "微软雅黑";color: #414141;}
+.mb-60{
+    margin-bottom: 60px;
+}
+.mb-30{
+    margin-bottom: 20px;
+}
+/* end reset */
+
+
+.main{
+    padding-top: 30px;
+    background: #e0f7ff;
+}
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+#canvas_section{
+    margin-bottom: 88px;
+}
+.canvas_box{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    border: 1px solid #414141;
+    margin-bottom: 40px;
+    background: #fff;
+}
+.canvas_box .btn_box{
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+}
+.canvas_box .btn_box a{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+.bigBtn{
+    background: url(../images/ZoomInButton_light_up.png);
+    left: 28px;
+}
+.smallBtn{
+    background: url(../images/ZoomOutButton_light_up.png);
+    left: 60px;
+}
+.fullscreen{
+    background: url(../images/FullScreenButton_light_up.png);
+    right: 28px;
+}
+.tumb_list li{
+    float: left;
+    width: 30%;
+    border: 1px solid #ccc;
+}
+.tumb_list li:nth-child(2){
+    margin: 0 5%;
+}
+.canvas_content h2{
+
+    font-size: 22px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #2d3194;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+}
+.canvas_content h3{
+    font-size: 20px;
+    height: 40px;
+    line-height: 38px;
+    letter-spacing: 3px;
+}
+.text{
+    margin-bottom: 46px;
+}
+.text ul li{
+    font-size: 16px;
+    line-height: 32px;
+}
+.bluedesc{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: url(../images/desc.png) no-repeat center;
+    vertical-align: middle;
+    margin-right: 15px;
+
+}
+.accordion_item a{
+    display: block;
+    border-radius: 30px;
+    background: #eeeeee;
+    color: #414141;
+    padding: 0 36px;
+    text-decoration: none;
+}
+.accordion_item a h4{
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+}
+.accordion_item a h4 span{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 18px;
+    background: url("../images/ZoomInButton_light_up.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    vertical-align: middle;
+}
+.accordion_item a h4 span.active{
+
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 18px;
+    background: url("../images/ZoomOutButton_light_up.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    vertical-align: middle;
+}
+.shaixuan_box .download_box{
+    border: none;
+    border-radius: 0;
+    padding: 0 10px;
+    background: #fff;
+    max-height: 278px;
+    overflow-y: scroll;
+    margin: 0;
+}
+.shaixuan_box1 .col-md-4{
+    padding-right: 0;
+}
+.shaixuan_box1 .col-md-8{
+    padding-left: 0;
+}
+.download_boxa{
+    background: #fff;
+    margin: 35px 0 0 -2px;
+    /*border: 1px solid #707070;*/
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+}
+.shaixuan_box .download_box::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 10px;
+
+}
+.shaixuan_box .download_box::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+
+    -webkit-box-shadow: inset 0px 0px 1px rgba(0,0,0,0.2);
+    background: #535353;
+}
+.shaixuan_box .download_box::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0px 0px 1px rgba(0,0,0,0.2);
+    background: #EDEDED;
+}
+.shaixuan_box .download_box::-webkit-scrollbar-button:vertical:start {
+    background-image: url("../images/up.png"), -webkit-linear-gradient(left, #f9f9f9 50%, #e2e2e2 100%);
+    background-repeat: no-repeat;
+    background-position: bottom left, 0 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.shaixuan_box .download_box::-webkit-scrollbar-button:vertical:end {
+    background-image: url("../images/down.png"), -webkit-linear-gradient(left, #f9f9f9 50%, #e2e2e2 100%);
+    background-repeat: no-repeat;
+    background-position: bottom left, 0 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.download_box{
+    border: 1px solid #707070;
+    padding: 0 40px;
+    margin: 0 42px;
+    border-top: none;
+}
+.download_box .download_wrap{
+    border-bottom: 1px solid rgb(210,210,210);
+}
+.download_box .download_wrap:last-child{
+    border: none;
+}
+.download_wrap .download_table{
+    vertical-align: middle;
+    padding: 14px 10px;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.download_wrap  .download_title{
+    margin: 0 60px;
+}
+.download_icon{
+    width: 60px;
+}
+.download_icon img{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+.download_action span{
+    margin-right: 10px;
+    font-size: 28px;
+    color: rgb(180,180,180);
+}
+.product_discription .text{
+    margin-left: 24px;
+}
+.product_title{
+    margin-bottom: 22px;
+}
+.product_title .bluebar{
+    display: inline-block;
+    height: 100px;
+    width: 8px;
+    float: left;
+    background: #234187;
+    margin-right: 14px;
+}
+.product_title h2{
+    padding: 10px 0;
+}
+.join_us{
+    margin-bottom: 60px;
+}
+.join_us .join_us_content{
+    padding: 0 40px;
+}
+.join_us .join_us_banner{
+    margin-bottom: 50px;
+}
+.join_us p{
+    line-height: 36px;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+.agent{
+    margin-bottom: 75px;
+}
+.agent .map{
+    padding: 0 40px;
+}
+.recommend_item{
+    position: relative;
+    overflow: hidden;
+}
+.recommend_item:hover .mask{
+    bottom:0;
+    transition: bottom 0.5s;
+}
+.mask{
+    width:100%;
+    position: absolute;
+    bottom:-100px;
+    background: #4b5f9e;
+    color: #fff;
+    padding-left: 28px;
+}
+.mask h3{
+    width: 60%;
+    padding: 10px 0;
+    border-bottom:1px solid #fff;
+}
+.mask p{
+    padding: 6px 0 16px;
+}
+.recommend{
+    margin-bottom: 50px;
+}
+.location{
+    margin-bottom: 58px;
+    padding: 0 20px;
+}
+.location_icon{
+    display: inline-block;
+    vertical-align: middle;
+    /*margin-right: 40px;*/
+    width: 15%;
+}
+.location_icon img{
+    width:55%;
+}
+.location_con{
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+}
+.location_con p{
+    font-size:14px;
+    line-height:20px;
+}
+#contact{
+    width: 80%;
+    margin: 0 auto;
+}
+#contact input, #contact textarea {
+    margin-bottom: 18px;
+    border-radius: unset;
+    font-size: 14px;
+}
+.contact{
+    margin-left: 50px;
+}
+.contact h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.contact p{
+    /*margin-bottom: 10px;*/
+    letter-spacing: 2px;
+}
+.contact p span{
+    vertical-align: middle;
+    font-size: 28px;
+    margin-right: 20px;
+}
+.fax{
+    margin-right: 30px;
+}
+.fax,.youjian{
+    display: inline-block;
+}
+.ditu{
+    margin-bottom: 50px;
+}
+.contact-form1 h3{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+#contact .contact-form1 .btn{
+    padding: 6px 30px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.solution_content{
+    margin-bottom: 55px;
+}
+.solution_content h2{
+    width: 50%;
+    padding-bottom: 14px;
+    border-bottom: 1px solid black;
+    font-size:22px;
+}
+.solution_content h3{
+
+    padding: 14px 0 40px 0;
+    font-size:20px;
+}
+.solution_content p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.solution_contact_form{
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 20px;
+}
+.solution_contact_form input,.solution_contact_form textarea{
+    font-size: 14px;
+    float: left;
+    padding: 6px 9px;
+    margin-bottom: 10px;
+}
+.solution_contact_form .user{
+    width: 28%;
+    margin-right: 2%;
+}
+.solution_contact_form input[type="email"]{
+    width: 34%;
+    margin-right: 2%;
+}
+.solution_contact_form input[type="tel"]{
+    width: 34%;
+}
+.solution_contact_form .company{
+    width: 49%;
+    margin-right: 2%;
+}
+.solution_contact_form .job{
+    width: 49%;
+}
+.solution_contact_form .trade{
+    width: 100%;
+}
+.solution_contact_form textarea{
+    width: 100%;
+    height:100px;
+}
+.solution_contact_form input[type="submit"]{
+    width: 50%;
+    float: right;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+.solution_contact .solution_contact_btn div{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #f8f8f8;
+    margin-bottom: 68px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.shaixuan_box1 .solution_contact .solution_contact_btn div{
+    margin-bottom: 20px;
+}
+
+
+
+#news{
+    padding: 0;
+    color: #fff;
+}
+#news .column{
+    border-bottom: 1px solid #d8d4d5;
+}
+#news h2{
+    font-size: 22px;
+    height: 96px;
+    line-height: 96px;
+}
+#news h2 a{
+}
+#news h2 i{
+    margin: 0 5px;
+}
+.news-list{
+    margin-top: 114px;
+}
+.news-single{
+    margin-bottom: 84px;
+}
+.news-single .new-content{
+}
+.news-single .new-content h3{
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+.news-single .new-content span{
+    font-size: 14px;
+}
+.news-single .new-content p{
+    font-size: 18px;
+    line-height: 36px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.news-single .new-content a{
+    font-size: 16px;
+}
+
+/*news-article*/
+.article{
+    color: #fff;
+}
+.article-content{
+    text-align: center;
+}
+.article-title h1{
+    line-height: 110px;
+}
+.article-content img{
+    margin-bottom: 40px;
+}
+.article-content p{
+    text-indent: 2em;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+}
+.article-content .btn{
+    border: 1px solid #414141;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.index3-lanr{
+    height: 100px;
+}
+.index3-lanTiaor{
+    float: right;
+    width: 8px;
+    height: 100px;
+    background: #234187;
+}
+
+
+.index3-lanr h3{
+    font-size: 28px;
+    padding-right: 30px;
+    line-height: 60px;
+    text-align: right;
+}
+.index3-lanr h5{
+    font-size: 22px;
+    padding-right: 30px;
+    line-height: 20px;
+    text-align: right;
+}
+
+@media (max-width: 1024px) {
+    section {
+        width: 100%;
+    }
+
+    .shaixuan_box {
+        width: 100%;
+    }
+    .shaixuan_box1 .col-md-4{
+        padding-right: 15px;
+    }
+    .shaixuan_box1 .col-md-8{
+        padding-left: 15px;
+    }
+    .download_boxa{
+        margin: 30px 0 30px 0px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+    .canvas_content h2{
+        width: 100%;
+    }
+    .canvas_box{
+        height: 450px;
+    }
+    .text ul li{
+        font-size: 14px;
+    }
+    .download_box{
+        padding: 0;
+        margin: -5px 10px 0;
+    }
+    .canvas_content h2 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .canvas_content h3{
+        font-size: 18px;
+        height: 20px;
+        line-height: 20px;
+        letter-spacing: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .accordion_item a h4 {
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .mb-30{
+        margin-bottom: 10px;
+    }
+    .product_discription .text {
+        margin-left: 10px;
+    }
+    .main .index3-lan,.main .index3-lanr {
+        height: 55px;
+    } {
+        height: 55px;
+    }
+    #canvas_section {
+        margin-bottom: 20px;
+    }
+
+    #contact{
+        width: 100%;
+    }
+    .contact {
+         margin-left: 0px;
+    }
+    .contact h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .ditu {
+        margin-bottom: 0px;
+    }
+    .contact-form1 h3 {
+        margin-bottom: 25px;
+    }
+    #contact .contact-form1 .btn {
+        padding: 6px 30px;
+        font-size: 14px;
+    }
+    .main {
+        padding-top: 30px;
+    }
+    .join_us .join_us_content {
+        padding: 0px 25px;
+    }
+    .join_us p {
+        line-height: 30px;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    .join_us .join_us_banner {
+        margin-bottom: 25px;
+    }
+
+    .join_us {
+        margin-bottom: 30px;
+    }
+
+    .agent .map {
+         padding: 0;
+    }
+
+    .location {
+        margin-bottom: 30px;
+    }
+    .agent {
+        margin-bottom: 50px;
+    }
+    .article-title h1 {
+         line-height: 30px;
+        font-size: 22px;
+    }
+    .article-content img {
+        margin-bottom: 30px;
+    }
+    .article-content p {
+        text-indent: 2em;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .solution_content h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+    .solution_content {
+        margin-top: 30px;
+    }
+    .solution_content h3 {
+        font-size: 18px;
+        padding: 10px 0 10px 0;
+    }
+    .solution_content p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .solution_contact .solution_contact_btn div {
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        background: #f8f8f8;
+        margin-bottom: 28px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .mb-60 {
+        margin-bottom: 0px;
+    }
+    .index3-lanTiaor {
+        height: 55px;
+    }
+    .index3-lanr h3 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .index3-lanr h5 {
+        font-size: 14px;
+    }
+    .solution_contact_form .user {
+        width: 100%;
+        margin-right: 0;
+    }
+    .solution_contact_form input[type="email"]{
+        width: 100%;
+        margin-right: 0%;
+    }
+    .solution_contact_form input[type="tel"]{
+        width: 100%;
+    }
+    .solution_contact_form .company{
+        width: 100%;
+        margin-right: 0%;
+    }
+    .solution_contact_form .job{
+        width: 100%;
+    }
+}
+@media (max-width: 414px) {
+    .canvas_box{
+        height: 350px;
+    }
+    .contact p span {
+        font-size: 35px;
+        margin-right: 10px;
+    }
+    .contact p {
+        margin-bottom: 0px;
+        letter-spacing: 0px;
+    }
+
+    .location_con p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #l-map {
+        height: 400px;
+    }
+}
+@media (max-width: 320px) {
+    .canvas_box {
+        height: 250px;
+    }
+
+    .contact p span {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    .location {
+        padding: 0 20px;
+    }
+
+    #l-map {
+        height: 300px;
+    }
+
+}
